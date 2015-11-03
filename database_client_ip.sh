@@ -9,7 +9,7 @@ fi
 netstat -an | grep ESTABLISHED | grep $1 > tmp_netstat
 
 # output all client IP addresses and ports
-awk '{print $5}' tmp_netstat > tmp_ip
+awk '{if($4~'$1') print $5;}' tmp_netstat > tmp_ip
 
 # output all client IP addresses
 awk -F':' '{print $1}' tmp_ip > tmp_netstat
