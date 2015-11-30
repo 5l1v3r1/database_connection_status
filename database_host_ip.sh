@@ -9,7 +9,7 @@ fi
 netstat -an | grep ESTABLISHED | grep $1 > tmp_netstat
 
 # output all host IP addresses and ports
-awk '{if($5~'$1') print $4;}' tmp_netstat > tmp_ip
+awk '{if($5~'$1') print $5;}' tmp_netstat > tmp_ip
 
 # output all host IP addresses
 awk -F':' '{print $1}' tmp_ip > tmp_netstat
