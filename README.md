@@ -2,19 +2,19 @@
 
 例如：
 
-1、查看MySQL数据库服务器当前连接的客户端IP地址列表：
+1.查看MySQL数据库服务器当前连接的客户端IP地址列表：
 
 ./database_client_ip.sh 3306
 
-2、查看Redis服务器当前连接的客户端IP地址列表：
+2.查看Redis服务器当前连接的客户端IP地址列表：
 
 ./database_client_ip.sh 6379
 
-3、查看MySQL数据库服务器当前连接的主机IP地址列表：
+3.查看MySQL数据库服务器当前连接的主机IP地址列表：
 
 ./database_host_ip.sh 3306
 
-4、查看Redis服务器当前连接的主机IP地址列表：
+4.查看Redis服务器当前连接的主机IP地址列表：
 
 ./database_host_ip.sh 6379
 
